@@ -1,13 +1,16 @@
 package com.ll.medium;
 
-import org.junit.jupiter.api.Test;
+
+import com.ll.medium.domain.question.question.QuestionRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class MediumApplicationTests {
 
-    @Test
-    void contextLoads() {
-    }
+@SpringBootTest
+class SbbApplicationTests {
+
+    @Autowired
+    private QuestionRepository questionRepository;
+
 
 }

@@ -1,0 +1,10 @@
+<html layout:decorate="~{global/usrLayout}">
+<div layout:fragment="content">
+
+    <ul>
+        <li th:each="post : ${posts}">
+            <a th:href="|/post/${post.id}|" th:text="${post.title}"></a>
+        </li>
+    </ul>
+</div>
+</html>
